@@ -39,7 +39,7 @@ public class Minesweep extends greenfoot.World
      */
     public Minesweep(int width, int height, int mines)
     {
-        super(width, height, 15);
+        super(width, height, 45);
         if (mines >= width * height)
             throw new IllegalArgumentException("There are no free spaces on the board! Lower the amount of mines!");
         numberOfMines = mines;
