@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Button
+comment0.text=\r\n\ An\ abstract\ actor\ for\ all\ buttons\r\n\ \r\n\ @author\ Nate\ Beasley\r\n\ @version\ 1.0.5\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=boolean\ isClicked()
+comment3.params=
+comment3.target=boolean\ isDragged()
+comment4.params=
+comment4.target=boolean\ isHovered()
+comment5.params=
+comment5.target=void\ removeSelfFromWorld()
+numComments=6

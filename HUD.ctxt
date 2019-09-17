@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=HUD
+comment0.text=\r\n\ The\ menu\ and\ HUD\ world\ that\ creates\ minesweeper\ worlds\ for\ the\ user.\r\n\ \r\n\ @author\ Nate\ Beasley\r\n\ @version\ 0.2.1\r\n
+comment1.params=
+comment1.target=HUD()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Menu.\r\n
+comment2.params=
+comment2.target=void\ background()
+comment2.text=\r\n\ Sets\ the\ background\r\n
+comment3.params=
+comment3.target=void\ act()
+comment4.params=w\ h\ m
+comment4.target=void\ updateStats(int,\ int,\ int)
+comment5.params=
+comment5.target=void\ updateWorld()
+numComments=6

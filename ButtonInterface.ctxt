@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ButtonInterface
+comment0.text=\r\n\ Button\ Interface\r\n\ \r\n\ @author\ Nate\ Beasley\ \r\n\ @version\ 1.0.0\r\n
+comment1.params=
+comment1.target=void\ whenHovered()
+comment2.params=
+comment2.target=void\ whenClicked()
+comment3.params=
+comment3.target=void\ whenDragged()
+numComments=4
