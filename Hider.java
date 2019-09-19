@@ -1,7 +1,7 @@
 import greenfoot.GreenfootImage;
 import greenfoot.Greenfoot;
 import java.util.ArrayList;
-
+import greenfoot.*; 
 /**
  * A hider "hides" the object beneath it.
  * 
@@ -74,8 +74,10 @@ public class Hider extends Button
         setImage(new GreenfootImage(backgroundImage));
         switch(setting)
         {
-            case 1: getImage().drawImage(flag,0,0);
-            break;
+            case 1: 
+                 String q = Greenfoot.ask("What would you like to know about ?");
+                getImage().drawImage(flag,0,0);
+                break;
             case 2: getImage().drawImage(question,0,0);
             default:;
         }
