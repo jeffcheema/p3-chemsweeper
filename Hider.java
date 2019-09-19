@@ -14,7 +14,8 @@ public class Hider extends Button
     private static final GreenfootImage hovered = new GreenfootImage("Background.png");
     private static final GreenfootImage flag = new GreenfootImage("flag.png");
     private static final GreenfootImage question = new GreenfootImage("question.png");
-
+    String stoichQuestions[][] = {{"What is Avogadro’s number rounded to two sig figs in scientific notation (use ^ to indicate exponents)?", "6.0 x 10^23"}, {"What is the molar mass of oxygen rounded to the hundredths place (two decimal places) with units?", "16.00 g/mol"}, {"What is the mole ratio of hydrogen to oxygen in a water molecule? Use a colon to indicate ratios.", "2:1"}, {"What is the molar mass of one mole of water rounded to the hundredths place (two decimal places) with units?", "18.02 g/mol"}};
+    
     private GreenfootImage backgroundImage = normal;
 
     private int setting = 0;
