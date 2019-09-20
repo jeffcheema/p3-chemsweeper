@@ -8,6 +8,7 @@ public class Mine extends greenfoot.Actor
 {
     public void activate()
     {
+        System.out.println("Game Over!");
         ((Minesweep)getWorld()).end();
     }
 }
