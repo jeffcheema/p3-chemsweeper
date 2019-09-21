@@ -19,12 +19,16 @@ public class Hider extends Button
     private int setting = 0;
 
     private boolean removing = false;
-
+    /**
+     * sets the image to a normal state 
+     */
     public Hider()
     {
         setImage(normal);
     }
-
+    /**
+     * Describes behavior for the hover  
+     */
     public void act()
     {
         super.act();
@@ -34,9 +38,12 @@ public class Hider extends Button
             drawSetting();
         }
     }
-
-    public void whenDragged(){}
-
+    
+    public void whenDragged(){
+    }
+    /**
+     * Handles the specific behavior of the hovering effect. 
+     */
     public void whenHovered()
     {
         backgroundImage = new GreenfootImage(hovered);
@@ -47,7 +54,9 @@ public class Hider extends Button
                    drawSetting();
                 
     }
-
+    /**
+     * Handles different input (right click, left click) and changes the tiles accordingly. 
+     */
     public void whenClicked()
     {
         if (Greenfoot.getMouseInfo().getButton() == 3)
@@ -89,11 +98,17 @@ public class Hider extends Button
             setting = 1; 
         }
     }
+    /**
+     * Places a flag based on behavior determined in whenClicked()
+     */
     void drawAsk(){
 
     getImage().drawImage(flag,0,0);
 
     }
+    /** 
+     * When needed to draw a flag this method checks the state of the mouse input and calls drawAsk accordingly. 
+     */
     private void drawSetting()
     {
         setImage(new GreenfootImage(backgroundImage));
@@ -107,7 +122,9 @@ public class Hider extends Button
         
     }
     
-
+    /**
+     * This method removes the current tile and changes the tiles surrounding the click center accordingly to the mechanics of minesweeper.
+     */
     public void removeSelfAndOthers()
     {
         ArrayList<Hider> hiders = new ArrayList<Hider>(9);
