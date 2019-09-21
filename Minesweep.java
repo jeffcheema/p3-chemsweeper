@@ -90,7 +90,9 @@ public class Minesweep extends greenfoot.World
         if (getObjects(Hider.class).size() == getObjects(Mine.class).size())
             end();
         if (gameOver && Greenfoot.isKeyDown("r"))
+        {
             reset();
+        }
     }
     
     /**
