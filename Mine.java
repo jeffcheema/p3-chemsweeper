@@ -9,7 +9,9 @@ public class Mine extends greenfoot.Actor
 {
     boolean flag = true;
 
-    
+    /**
+     * The activate function activates the mine. It asks the user to answer a question to in order to avoid setting off the mine. The user has 3 lives. 
+     */
     public void activate()
     {
         if (((Minesweep)getWorld()).lives > 0)

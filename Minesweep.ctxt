@@ -30,4 +30,5 @@ comment8.target=void\ end()
 comment8.text=\r\n\ Let's\ the\ user\ know\ they\ won\ or\ lost\r\n
 comment9.params=death
 comment9.target=boolean\ askQuestion(boolean)
+comment9.text=\r\n\ The\ ask\ askQuestion\ method\ chooses\ a\ question\ at\ random\ and\ proccess\ the\ results.\ \r\n
 numComments=11

@@ -3,4 +3,5 @@ comment0.target=Mine
 comment0.text=\r\n\ A\ mine\r\n\ \r\n\ @author\ Nate\ Beasley\r\n\ @version\ 1.0.0\r\n
 comment1.params=
 comment1.target=void\ activate()
+comment1.text=\r\n\ The\ activate\ function\ activates\ the\ mine.\ It\ asks\ the\ user\ to\ answer\ a\ question\ to\ in\ order\ to\ avoid\ setting\ off\ the\ mine.\ The\ user\ has\ 3\ lives.\ \r\n
 numComments=2
