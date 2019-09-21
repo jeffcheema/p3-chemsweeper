@@ -7,10 +7,26 @@ import greenfoot.*;
  */
 public class Mine extends greenfoot.Actor
 {
+    boolean flag = true;
+
+    
     public void activate()
     {
-        String q=Greenfoot.ask("Oh no! You died. Answer this question for another chance.");
-        
+        if (((Minesweep)getWorld()).lives > 0)
+        {
+           Greenfoot.ask("Oh no! You have hit a mine. Answer a question to keep going, if you answer incorrectly the game will end!") ;   
+
+
+             if (((Minesweep)getWorld()).askQuestion(true)) //use array of questions to look for corresponding answer
+             {
+               
+                ((Minesweep)getWorld()).lives--;
+             }
+             else
+             //answer is incorrect and game ends
+             ((Minesweep)getWorld()).end();
+        }
+        else
         ((Minesweep)getWorld()).end();
     }
 }
