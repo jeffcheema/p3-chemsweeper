@@ -72,15 +72,21 @@ public class Hider extends Button
         {
             if (setting != 1)
             {
+                
                 Mine mine = (Mine)getOneIntersectingObject(Mine.class);
                 if (mine != null)
                 {
                     getWorld().removeObject(this);
+                   
                     mine.activate();
+                    setting = 1; 
                     return;
+                    
                 }
+                setting = 1; 
                 removeSelfAndOthers();
             }
+            setting = 1; 
         }
     }
     void drawAsk(){

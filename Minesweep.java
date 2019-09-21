@@ -120,9 +120,7 @@ public class Minesweep extends greenfoot.World
                 asking = true; 
                         Random generator = new Random();
                 int randomIndex = generator.nextInt(questions.length);        
-                if(asked.contains(randomIndex)){
-                        askQuestion(death);
-                }
+           
 
                 answer = Greenfoot.ask(questions[randomIndex][0]).toLowerCase();
                  
