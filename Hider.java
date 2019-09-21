@@ -42,10 +42,10 @@ public class Hider extends Button
         backgroundImage = new GreenfootImage(hovered);
                    
 
-        if(!((Minesweep)getWorld()).asking){
-            
+      
+                    System.out.println(setting);
                    drawSetting();
-                }
+                
     }
 
     public void whenClicked()
@@ -62,7 +62,12 @@ public class Hider extends Button
             drawSetting();
             
         }
+        else{
+        setting = 0;
+    }
         }
+                
+
         else
         {
             if (setting != 1)
