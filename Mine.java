@@ -27,6 +27,7 @@ public class Mine extends greenfoot.Actor
              ((Minesweep)getWorld()).end();
         }
         else
+        Greenfoot.ask("Game is over! (Press enter to continue)");  
         ((Minesweep)getWorld()).end();
     }
 }

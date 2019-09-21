@@ -40,23 +40,28 @@ public class Hider extends Button
     public void whenHovered()
     {
         backgroundImage = new GreenfootImage(hovered);
-        drawSetting();
+                   
+
+        if(!((Minesweep)getWorld()).asking){
+            
+                   drawSetting();
+                }
     }
 
     public void whenClicked()
     {
         if (Greenfoot.getMouseInfo().getButton() == 3)
         {
-            ((Minesweep)getWorld()).asking = true; 
+            
             
             if (setting == 2)
                 setting = -1;
             setting++;
-           if (((Minesweep)getWorld()).askQuestion(false)){
-            drawSetting();
-            }
+           if (((Minesweep)getWorld()).askQuestion(false)) {
            
+            drawSetting();
             
+        }
         }
         else
         {

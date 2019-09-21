@@ -117,6 +117,7 @@ public class Minesweep extends greenfoot.World
         gameOver = true;
     }
     public boolean askQuestion(boolean death){
+                asking = true; 
                         Random generator = new Random();
                 int randomIndex = generator.nextInt(questions.length);        
                 if(asked.contains(randomIndex)){
@@ -143,6 +144,7 @@ public class Minesweep extends greenfoot.World
                 Greenfoot.ask("Oh no! You got this "+ questions[randomIndex][2] + " question incorrect. You currently have "+lives+" life left! (Press enter to continue)") ;   
                 }
                 return false;
+                
                 }
                 
     };
